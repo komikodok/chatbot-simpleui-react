@@ -1,13 +1,10 @@
 import { FC } from "react";
 
 import Button from "../common/Button";
+import NewChatAttributes from "../types/newchat.type";
 
 
-interface INewChat {
-    createSession?: (data: string) => void
-}
-
-const NewChat: FC<INewChat> = ({createSession}) => {
+const NewChat: FC<NewChatAttributes> = ({createSession}) => {
     return (
         <div className="tooltip tooltip-bottom" data-tip="New Chat">
             <Button 
